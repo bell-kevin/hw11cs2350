@@ -1,5 +1,9 @@
 # 
+![p](https://github.com/bell-kevin/hw11cs2350/blob/main/pic2.PNG)
 
+![p](https://github.com/bell-kevin/hw11cs2350/blob/main/pic3.PNG)
+
+![p](https://github.com/bell-kevin/hw11cs2350/blob/main/pic1.PNG)
 
 == We're Using GitHub Under Protest ==
 
