@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SlideShow</title>
+    <meta name="description" content="Mad Libs Game">
+    <meta name="keywords" content="mad libs, game">
+    <meta name="author" content="Kevin Bell">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/favicon.ico" type="image/favicon.ico">
+    <link rel="stylesheet" href="resources/commonStyle.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./machineLearning.html">Machine Learning Basics</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More</a>
+                <div class="dropdown-content">
+                    <a href="./howToPublish.html">How to Publish</a>
+                    <a href="./cssConcepts.html">CSS Concepts</a>
+                    <a href="./madLibs.html">Mad Libs</a>
+                    <a href="./slideShow.html">SlideShow</a>
+                    <a href="./form.html">Shop</a>
+                    <a href="./buildCat.html">Build a Cat</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="resources/logo.png" alt="Logo">
+        <h1>Kevin Bell</h1>
+    </header>
+    <main class="slideshow">
+        <h2 class="centered-heading">Things to do in the Land of Hyrule</h2>
+        <img id="picture" class="slideshow" src="resources/BotW0.jpg" alt="The land of Hyrule" width="1280"
+            height="720">
+
+        <div class="caption-container">
+            <p id="caption" class="caption">
+                Swim through the serene sunset lakes.
+            </p>
+        </div>
+
+
+        <p class="buttons">
+            <button id="prev" class="custom-button">Previous</button>
+            <button id="play" class="custom-button" onclick="startSlideShow()">Start Show</button>
+            <button id="pause" class="custom-button" onClick="pauseSlideShow">End Show</button>
+            <button id="next" class="custom-button">Next</button>
+
+        </p>
+    </main>
+    <footer>
+        <p>Created by Kevin Bell. Copyright 2023. bellKevin@pm.me</p>
+        <hr>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Build a Cat</title>
+    <meta name="description" content="Build Cat">
+    <meta name="keywords" content="cat, build, ">
+    <meta name="author" content="Kevin Bell">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/favicon.ico" type="image/favicon.ico">
+    <link rel="stylesheet" href="resources/commonStyle.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./machineLearning.html">Machine Learning Basics</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More</a>
+                <div class="dropdown-content">
+                    <a href="./howToPublish.html">How to Publish</a>
+                    <a href="./cssConcepts.html">CSS Concepts</a>
+                    <a href="./madLibs.html">Mad Libs</a>
+                    <a href="./slideShow.html">SlideShow</a>
+                    <a href="./form.html">Shop</a>
+                    <a href="./buildCat.html">Build a Cat</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="resources/logo.png" alt="Logo">
+        <h1>Kevin Bell</h1>
+    </header>
+    <main>
+    <form method="post" action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php">
+    
+    <h2 class="center">Build Your Dream Cat!</h2>
+    
+    <section>
+        <h3 class="center">Basic Info</h3>
+        
+        <p><label for="catPre">Cat Name Prefix (if applicable)</label>
+        <input type="text" name="catPre" id="catPre"  /></p>
+        
+        <p><label for="catName">Cat Name</label>
+        <input type="text" name="catName" id="catName"  /></p>
+        
+        <p><label for="catPlace">Place of Origin</label>
+        <input type="text" name="catPlace" id="catPlace"  /></p>
+    </section>
+    
+    <section>
+        <label for="bioCheck" class="catCheckBoxLabels">Add Cat Bio</label>
+        <input type="checkbox" id="bioCheck" name="bioCheck">
+        
+        <div id="bioContent">
+            <p><label for="bio">Cat Bio</label>
+            <input type="text" name="bio" id="bio"  /></p>
+        </div>
+    </section>
+    
+    <section>
+        <label for="friendsCheck" class="catCheckBoxLabels">Add Cat Friends List<label></label>
+        <input type="checkbox" id="friendsCheck" name="friendsCheck">
+        
+        <div id="friendsContent">
+            <p><label for="friends">Cat Friends</label>
+            <input type="text" name="friends" id="friends"  /></p>
+        </div>
+    </section>
+    
+    <section>
+        <h3 class="center">Looks</h3>
+        
+        <label for="eyeColor">Eye Color</label>
+        <select id="eyeColor" name="eyeColor" class="center">
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+            <option value="green">Green</option>
+            <option value="brown">Brown</option>
+            <option value="red">Red</option>
+            <option value="hazel">Hazel</option>
+        </select>
+        
+        <p>
+        <label for="coatColor">Coat Color</label>
+        <select id="coatColor" name="coatColor" class="center">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="brown">Brown</option>
+            <option value="orange">Orange</option>
+            <option value="gray">Gray</option>
+        </select>
+        <label for="coatLength">Short Coat</label><input type="radio" id="coat1" name="coatLength" value="short">
+        <label for="coatLength">Long Coat</label><input type="radio" id="coat2" name="coatLength" value="long">
+        </p>
+        
+        <p>
+        <label for="stripes" class="checkbox">Striped Coat?</label><input type="checkbox" id="stripes" name="stripes">
+        </p>
+        
+        <p>
+        <label for="tailLength">Short Tail</label><input type="radio" id="tail1" name="tailLength" value="short">
+        <label for="tailLength">Long Tail</label><input type="radio" id="tail2" name="tailLength" value="long">
+        </p>
+        
+    </section>
+    
+    
+    <section>
+        <h3 class="center">Personality</h3>
+        
+        <p>
+        <label for="playfulnessRating">Playfulness Rating (1-10)</label>
+        <input type="text" name="playfulnessRating" id="playfulnessRating" class="quantity">
+        </p>
+        
+        <p>
+        <label for="toys">Number of Toys</label>
+        <input type="text" name="toys" id="toys" class="cost" readonly>
+        </p>
+        
+        <p>
+        <label for="likesFoodRating">Food Enjoyment Rating (1-10)</label>
+        <input type="text" name="likesFoodRating" id="likesFoodRating" class="quantity">
+        </p>
+        
+        <p>
+        <label for="meals">Number of Meals Per Day</label>
+        <input type="text" name="meals" id="meals" class="cost" readonly>
+        </p>
+        
+        <p>
+        <label for="energyRating">Energy Rating (1-10)</label>
+        <input type="text" name="energyRating" id="energyRating" class="quantity">
+        </p>
+        
+        <p>
+        <label for="naps">Number of Naps Per Day</label>
+        <input type="text" name="naps" id="naps" class="cost" readonly>
+        </p>
+    </section>
+    
+    <section>
+        <h3 class="center">Cost of Living</h3>
+        
+        <p>
+        <label for="toysCost">Cost of Toys</label>
+        <input type="text" name="toysCost" id="toysCost" class="cost" readonly>
+        </p>
+        
+        <p>
+        <label for="foodCost">Cost of Food (per month)</label>
+        <input type="text" name="foodCost" id="foodCost" class="cost" readonly>
+        </p>
+        
+        <p>
+        <label for="totalCost">Total</label>
+        <input type="text" name="totalCost" id="totalCost" class="cost" readonly>
+        </p>
+    </section>
+    
+    <section>
+        <h2 class="center">Submit Cat Info</h2>
+        
+        <input type="submit" id="submit" name="submit" value="Submit">
+    </section>
+    
+    </form>
+</main>
+<footer>
+    <p>Created by Kevin Bell. Copyright 2023. bellKevin@pm.me</p>
+    <hr>
+</footer>
+    
+    <script src="catScript.js"></script>
+</body>
+
+</html>

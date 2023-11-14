@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ADD8E6;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    margin: 15px;
+    padding: 10px;
+}
+
+header {
+    background-color: #ADD8E6;
+    margin: 20px;
+    padding: 1vw;
+    width: 90%;
+    height: auto;
+}
+
+header img {
+    float: left;
+    /* margin-right: 20px; */
+    width: 10vw;
+    /* Adjust as needed */
+    height: auto;
+    /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+
+.user-input {
+    font-weight: bold;
+    color: #FF0000; /* Red color for user inputs*/
+}
+
+
+header h1 {
+    line-height: 0px;
+    font-size: 8vw;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: auto;
+}
+
+a {
+    color: #4169E1;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #00008B;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2.center {
+    text-align: center;
+
+}
+
+h3.center {
+    text-align: center;
+}
+
+select.center {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+nav {
+    background-color: #ADD8E6;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #00008B;
+    background-color: #ADD8E6;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #00008B;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #00BFFF;
+    color: #00008B;
+    width: 100%;
+}
+
+main section {
+    border-left: 3px solid #205168;
+    border-bottom: 3px solid #205168;
+    margin: 8px;
+    padding: 12px;
+    box-shadow: -4px 4px 8px #205168;
+    border-radius: 14px;
+}
+
+main section img {
+    float: right;
+    margin-left: 8px;
+    height: auto;
+}
+
+
+
+.slideshow img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+aside {
+    background-color: #205168;
+    text-align: center;
+    padding: 8px;
+}
+
+aside h3 {
+    color: #DCEBE6;
+    font-size: 4vw;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ADD8E6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 1px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #00BFFF;
+    color: #00008B;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+button.story {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	height: 40px;
+	width: 150px;
+	padding-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+button.tryAgain {
+	width: 180px;
+	font-size: 22px;
+}
+
+p.buttons {
+    text-align: center;
+    
+}
+
+.centered-heading {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text */
+    margin: 0px; /* Remove any default margins */
+    padding: 20px;
+}
+
+
+/* Style for custom buttons */
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Background color */
+    color: #ffffff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+    background-color: #45a049; /* Darker background color on hover */
+}
+
+
+.caption-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* This assumes the parent container has a defined height */
+}
+
+
+label {
+	display: block;
+	text-align: center;
+	font-size: 24px;
+}
+
+input {
+	display: block;
+	height: 30px;
+	width: 180px;
+	text-align: center;
+	font-size: 24px;
+	margin: 12px auto 36px auto;
+}
+
+p.story {
+	font-size: 18px;
+	border: 4px groove #FFED00;
+	padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Grid System */
+.row {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+#bioContent,
+#friendsContent{
+    display: none;
+}
+
+/* For mobile phones */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    header img {
+        width: 5vw;
+        height: auto;
+    }
+
+    /* For tablets */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      [class*="col-"] {
+        float: right;
+        padding: 15px;
+      }
+      
+    nav li {
+        display: inline;
+        border: none;
+        background-color: #ADD8E6;
+    }
+
+    nav a:hover {
+        display: inline;
+    }
+
+    .nav li {
+        display: inline;
+        border: none;
+        background-color: #ADD8E6;
+    }
+
+    .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 992px) {
+
+    nav li {
+        display: inline;
+        border: none;
+        background-color: #ADD8E6;
+    }
+
+    header img {
+        width: 5vw;
+        height: auto;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+      }
+
+    nav a:hover {
+        display: inline;
+    }
+
+    /* For desktop */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+}

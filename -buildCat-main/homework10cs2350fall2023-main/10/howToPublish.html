@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Dummy Page">
+    <meta name="keywords" content="dummy, page, example">
+    <meta name="author" content="Kevin Bell">
+    <link rel="icon" href="./image/favicon.ico" type="image/favicon.ico">
+    <link rel="stylesheet" href="resources/commonStyle.css">
+    <title>How to Publish on Icarus</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./machineLearning.html">Machine Learning Basics</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More</a>
+                <div class="dropdown-content">
+                    <a href="./howToPublish.html">How to Publish</a>
+                    <a href="./cssConcepts.html">CSS Concepts</a>
+                    <a href="./madLibs.html">Mad Libs</a>
+                    <a href="./slideShow.html">SlideShow</a>
+                    <a href="./form.html">Shop</a>
+                    <a href="./buildCat.html">Build a Cat</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="resources/logo.png" alt="Logo">
+        <h1>Kevin Bell</h1>
+    </header>
+    <main>
+        <h1>How to Publish on Icarus Web Server</h1>
+        <h2>Uploading Files to Icarus</h2>
+
+        <p>Before we get started with how to upload something to the Icarus server, you first will need to download
+            Remmina, which will be the program we use to connect to Icarus as well as to upload files to it. You can get
+            to the download page for Remmina <a href="https://remmina.org/how-to-install-remmina/">here</a>. Ok, now
+            that you have Remmina downloaded, install it and we can start connecting to Icarus.</p>
+
+        <ol>
+            <li>Click where it says "Open Connection" in the top-left corner; this will open the window shown in the
+                image below.</li>
+            <ul>
+                <li>Change the drop-down menu at the top to SFTP.</li>
+                <li>For the server, enter: icarus.cs.weber.edu</li>
+                <li>Set port to: 22</li>
+                <li>Set username to: first initial, last initial, and last 5 digits of your W number.</li>
+                <li>Enter your password as your first name followed by "cs!"</li>
+                <li>Then hit "Connect"</li>
+            </ul>
+            <p><img src="resources/example-image1.png" alt="Example image of how to connect to the Icarus server"></p>
+            <li>After you try to connect to the Icarus server, you may get the pop-up message shown below. If you get
+                this message, just choose "Allow".</li>
+            <p><img src="resources/example-image2.png" alt="Image of a pop-up"></p>
+            <li>Now you are free to upload your files and folders to Icarus where it can be publicly accessed. This is
+                very easy to do with Cyberduck, all you simply need to do is select whichever files and/or folders you
+                wish to upload and then just click and drag them to wherever inside of the "public_html" folder you wish
+                to put them. This is shown in the image below.</li>
+            <p><img src="resources/example-image3.png" alt="Image of files being uploaded to the Icarus server"></p>
+        </ol>
+
+        <p>Congratulations! You have now successfully connected and uploaded files to the Icarus server. Next, we will
+            look at how to know what the URL would be for navigating to whatever you uploaded from any device connected
+            to the internet.</p>
+
+        <h2>Making a URL for a File on Icarus</h2>
+
+        <p>To build the URL for a file on Icarus, follow this pattern, the words that are in all caps are to be replaced
+            by you: "https://HOSTNAME/~USERNAME/PATH/FILENAME". For this example, we will be using icarus.cs.weber.edu
+            as the hostname and gs35549 for the username. The path is the path through whichever folders you need to go
+            through starting from inside of the folder public_html. One important thing to remember though is if you are
+            making a URL to an index.html page, then you do not need to add the filename to the URL and you can end the
+            URL with the folder name; it will automatically open index.html if it finds one in the folder. Below are
+            some examples of this.</p>
+
+        <h3>Example URL for Page on the Icarus Server</h3>
+
+        <ul>
+            <li><a
+                    href="https://icarus.cs.weber.edu/~kb24850/hw2cs2350/machineLearning/machineLearning.html">https://icarus.cs.weber.edu/~kb24850/hw2cs2350/machineLearning/machineLearning.html</a>
+                <br> <br> <img src="resources/example-image4.png" alt="Machine Learning"></li> <br>
+            <img src="resources/example-image5.png" alt="Image of URL path for distractions page"><br>
+            <br> <img src="resources/example-image6.png" alt="Image of URL path for home page">
+        </ul>
+
+    </main>
+
+    <footer>
+        <p>Created by Kevin Bell. Copyright 2023. bellKevin@pm.me</p>
+        <hr>
+    </footer>
+</body>
+
+</html>

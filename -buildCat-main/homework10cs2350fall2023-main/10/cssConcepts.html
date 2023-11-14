@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn CSS concepts">
+    <meta name="keywords" content="CSS, Box Model, Hover, Color Contrast">
+    <meta name="author" content="Kevin Bell">
+    <title>CSS Concepts</title>
+    <link rel="stylesheet" href="resources/style.css">
+    <link rel="stylesheet" href="resources/commonStyle.css">
+    <link rel="icon" href="./image/favicon.ico" type="image/favicon.ico">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./machineLearning.html">Machine Learning Basics</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More</a>
+                <div class="dropdown-content">
+                    <a href="./howToPublish.html">How to Publish</a>
+                    <a href="./cssConcepts.html">CSS Concepts</a>
+                    <a href="./madLibs.html">Mad Libs</a>
+                    <a href="./slideShow.html">SlideShow</a>
+                    <a href="./form.html">Shop</a>
+                    <a href="./buildCat.html">Build a Cat</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <img src="resources/logo.png" alt="Logo">
+        <h1>Kevin Bell</h1>
+    </header>
+    <main>
+        <!-- Section 1: CSS Box Model -->
+        <section>
+            <h2 class="h2css">The CSS Box Model</h2>
+            <div class="container">
+                <img src="resources/box-model.png" alt="CSS Box Model" class="resizeable-image">
+            </div>
+            <p>The CSS box model consists of four parts: content, padding, border, and margin.</p>
+            <p>
+                <strong>Content:</strong> This is the innermost part of the box and holds the actual content, such as
+                text,
+                images, or other media. The size of the content area is determined by the <code>width</code> and
+                <code>height</code> properties you set in your CSS.
+            </p>
+            <p>
+                <strong>Padding:</strong> Padding is the space between the content and the element's border. You can set
+                padding using the <code>padding</code> property. Padding adds space inside the element, increasing its
+                overall size. It can be uniform on all sides or specific to each side (e.g., <code>padding-top</code>,
+                <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code>).
+            </p>
+            <p>
+                <strong>Border:</strong> The border is the line or boundary that surrounds the padding and content of an
+                element. You can define the border's width, style, and color using properties like
+                <code>border-width</code>, <code>border-style</code>, and <code>border-color</code>. The border adds to
+                the
+                overall size of the element.
+            </p>
+            <p>
+                <strong>Margin:</strong> Margins are the spaces outside of the border that separate an element from
+                other
+                elements on the web page. You can set margins using the <code>margin</code> property. Margins do not
+                have a
+                background color or border and are used to create space between elements. Like padding, margins can be
+                uniform or specific to each side (e.g., <code>margin-top</code>, <code>margin-right</code>,
+                <code>margin-bottom</code>, and <code>margin-left</code>).
+            </p>
+            <h3>Padding Demonstrations</h3>
+            <div class="box padding-demo" id="padding-demo1">
+                <p>Padding on all sides is the same (40px).</p>
+            </div>
+            <div class="box padding-demo" id="padding-demo2">
+                <p>Padding on top and bottom (60px), right and left (20px).</p>
+            </div>
+            <div class="box padding-demo" id="padding-demo3">
+                <p>Padding on top (30px), right (50px), bottom (70px), left (90px).</p>
+            </div>
+            <h2>Margin Demonstrations</h2>
+            <div class="box margin-demo" id="margin-demo1">
+                <p>Default margin (no margin property set).</p>
+            </div>
+            <div class="box margin-demo" id="margin-demo2">
+                <p>Left margin set to 50px.</p>
+            </div>
+            <div class="box margin-demo" id="margin-demo3">
+                <p>Left margin set to 150px.</p>
+            </div>
+        </section>
+
+
+        <!-- Section 2: Changing Style on Hover -->
+        <section>
+            <h2>Changing Style on Hover</h2>
+            <p>Hover means when the user moves their mouse over an element.</p>
+            <div class="hover-box1" id="hover-box1">Box 1</div>
+            <div class="hover-box2" id="hover-box2">Box 2</div>
+            <div class="hover-box3" id="hover-box3">Box 3</div>
+        </section>
+
+        <!-- Section 3: Color Contrast -->
+        <section>
+            <h2>Color Contrast</h2>
+            <table>
+                <tr>
+                    <th>Text</th>
+                    <th>Background Color</th>
+                    <th>Text Color</th>
+                    <th>Contrast Ratio</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>#FFFFFF</td>
+                    <td>#000000</td>
+                    <td>21:1</td>
+                    <td>AAA</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>#FF5733</td>
+                    <td>#FFF</td>
+                    <td>3.68:1</td>
+                    <td>AA</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>#46e906</td>
+                    <td>#333</td>
+                    <td>7.59:1</td>
+                    <td>AA</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>#ffd900</td>
+                    <td>#555</td>
+                    <td>3.43:1</td>
+                    <td>AA</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>#666</td>
+                    <td>#999</td>
+                    <td>2.23:1</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet</td>
+                    <td>#123456</td>
+                    <td>#123</td>
+                    <td>8.63:1</td>
+                    <td>None</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <!-- Section 4: Position -->
+        <section>
+            <h2>Position</h2>
+            <p>The CSS <code>position</code> property allows you to control the placement of elements on a web page.</p>
+
+            <!-- Relative Position -->
+            <div class="position-demo" id="relative-position">
+                <h3>Relative Position</h3>
+                <p>When the <code>position</code> property is set to <code>relative</code>, an element's position is
+                    adjusted relative to its normal position in the document flow.</p>
+                <p>Here's an example of an element with relative positioning:</p>
+                <div style="position: relative;">
+                    <img src="resources/relative-position.png" alt="Relative Position Example">
+                    <p>This image is relatively positioned.</p>
+                </div>
+            </div>
+
+            <!-- Absolute Position -->
+            <div class="position-demo" id="absolute-position">
+                <h3>Absolute Position</h3>
+                <p>When the <code>position</code> property is set to <code>absolute</code>, an element is positioned
+                    relative to its nearest positioned ancestor. If no ancestor has a <code>position</code> other than
+                    the default, it will be positioned relative to the initial containing block (usually the viewport).
+                </p>
+                <p>Here's an example of an element with absolute positioning within a positioned ancestor:</p>
+                <div style="position: relative;">
+                    <div style="position: absolute; top: 1px; left: 400px;">
+                        <img src="resources/absolute-position.png" alt="Absolute Position Example">
+                        <p>This image is absolutely positioned within a relative container.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fixed Position -->
+            <div class="position-demo" id="fixed-position">
+                <h3>Fixed Position</h3>
+                <p>When the <code>position</code> property is set to <code>fixed</code>, an element is positioned
+                    relative to the viewport. It stays fixed in its position even when the page is scrolled.</p>
+                <p>Here's an example of an element with fixed positioning:</p>
+                <div style="position: fixed; top: 10px; right: 10px;">
+                    <img src="resources/fixed-position.png" alt="Fixed Position Example">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section 5: Shadow -->
+        <section>
+            <h2>Shadow</h2>
+            <p>This section demonstrates different shadow properties.</p>
+
+            <!-- Text Shadow -->
+            <div class="shadow-demo" id="text-shadow-example">
+                <h3>Text Shadow</h3>
+                <p>Text shadow is applied to text elements.</p>
+                <p class="shadow-text">This is a text shadow example.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created by Kevin Bell. Copyright 2023. bellKevin@pm.me</p>
+        <hr>
+    </footer>
+
+</body>
+
+</html>
