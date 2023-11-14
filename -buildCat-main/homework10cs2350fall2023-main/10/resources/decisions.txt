@@ -1,0 +1,26 @@
+Common Style Decisions for Website
+
+Color scheme: Monochromatic scheme based on the color blue, ranging from light blue (#ADD8E6) to dark blue (#00008B).
+
+Background color/image: A light blue (#ADD8E6) background color.
+
+Font style: Arial, sans-serif for its clean and modern look.
+
+Text color: Dark blue (#00008B) for headers and black (#000000) for regular text to ensure readability against the light background.
+
+Link style: Underlined and in royal blue (#4169E1) to distinguish them from regular text.
+
+Link style on hover: Change to deep sky blue (#00BFFF) and remove underline when hovered over to indicate interactivity.
+
+h1-h6 style:
+
+h1: Dark blue (#00008B), 32px, bold
+h2: Dark blue (#00008B), 28px, bold
+h3: Dark blue (#00008B), 24px, bold
+h4: Dark blue (#00008B), 20px, bold
+h5: Dark blue (#00008B), 18px, bold
+h6: Dark blue (#00008B), 16px, bold
+
+Margins: 15px for general elements to give the design some breathing room.
+
+Padding: 10px for general elements to ensure text isn’t too close to the borders of its container.
